@@ -21,8 +21,8 @@ justtime = now.strftime("%H:%M")
 print (current_time)
 
 if __name__ == '__main__':
-    username = "varsur1420"
-    password = "varshinisurya"
+    username = "your username"
+    password = "your password"
 
     driver = uc.Chrome()
     driver.delete_all_cookies()
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     driver.find_element_by_xpath('//input[@type="password"]').send_keys(password)
     driver.find_element_by_xpath('//*[@id="passwordNext"]').click()
     sleep(2)
-    driver.get('https://meet.google.com/sda-ftmj-xki')
+    driver.get('your-meet-link')
     sleep(20)
 
     def meet_redirect():
